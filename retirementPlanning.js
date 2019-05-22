@@ -8,9 +8,24 @@ try {
 
 }
 
+var total = 0;
+var initInvested = 0
+
 
 inquirer
     .prompt([
+        {
+            type: "input",
+            name: "initialInvestment",
+            message: "What is your initial investment?  If none enter 0.",
+            validate: function (input) {
+                var pass = /^[0-9][A-Za-z0-9 -]*$/.test(input);
+                if (pass) {
+                    return true;
+                }
+                return 'Please enter a number';
+            }
+        },
         {
             type: "input",
             name: "amountToInvest",
@@ -50,31 +65,38 @@ inquirer
 
     ]).then((answers) => {
 
+        var initInvested = parseFloat(answers.initialInvestment)
         var yearlyAmountToInvest = parseFloat(answers.amountToInvest);
         var numOfYearsToInvest = parseFloat(answers.numOfYears)
         var roi = parseFloat(answers.return)
         var expectReturnOnInvestment = roi / 100
-        printStats(yearlyAmountToInvest, numOfYearsToInvest, expectReturnOnInvestment)
+        printStats(initInvested, yearlyAmountToInvest, numOfYearsToInvest, expectReturnOnInvestment)
+
 
     })
 
-var total = 0;
 
-function printStats(yati, noyti, eroi) {
+
+function printStats(initInvested, yati, noyti, eroi) {
+
+    console.log(initInvested);
+    var initial = initInvested
 
     for (let i = 0; i < noyti; i++) {
 
-        var amount = yati + total;
+        var amount = initial + yati + total;
         var gains = amount * eroi;
         total = amount + gains;
+        initial = 0;
         var yearNum = i + 1;
 
         var a = amount.toFixed(2)
         var b = gains.toFixed(2)
         var c = total.toFixed(2)
+        var d = yati.toFixed(2)
 
         fs.appendFileSync('retirement.txt', "Year " + yearNum + '\n');
-        fs.appendFileSync('retirement.txt', "Amount: $" + a + "    Expected Return: " + b + "    Total: " + c + '\n');
+        fs.appendFileSync('retirement.txt', "Amount: $" + a + "||   Amount Invested: $" + d + "||   Expected Return: $" + b + "||    Total: $" + c + '\n');
     }
 
 }

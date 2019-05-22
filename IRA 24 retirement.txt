@@ -1,0 +1,48 @@
+Year 1
+Amount: $6000.00    Expected Return: 420.00    Total: 6420.00
+Year 2
+Amount: $12420.00    Expected Return: 869.40    Total: 13289.40
+Year 3
+Amount: $19289.40    Expected Return: 1350.26    Total: 20639.66
+Year 4
+Amount: $26639.66    Expected Return: 1864.78    Total: 28504.43
+Year 5
+Amount: $34504.43    Expected Return: 2415.31    Total: 36919.74
+Year 6
+Amount: $42919.74    Expected Return: 3004.38    Total: 45924.13
+Year 7
+Amount: $51924.13    Expected Return: 3634.69    Total: 55558.82
+Year 8
+Amount: $61558.82    Expected Return: 4309.12    Total: 65867.93
+Year 9
+Amount: $71867.93    Expected Return: 5030.76    Total: 76898.69
+Year 10
+Amount: $82898.69    Expected Return: 5802.91    Total: 88701.60
+Year 11
+Amount: $94701.60    Expected Return: 6629.11    Total: 101330.71
+Year 12
+Amount: $107330.71    Expected Return: 7513.15    Total: 114843.86
+Year 13
+Amount: $120843.86    Expected Return: 8459.07    Total: 129302.93
+Year 14
+Amount: $135302.93    Expected Return: 9471.20    Total: 144774.13
+Year 15
+Amount: $150774.13    Expected Return: 10554.19    Total: 161328.32
+Year 16
+Amount: $167328.32    Expected Return: 11712.98    Total: 179041.30
+Year 17
+Amount: $185041.30    Expected Return: 12952.89    Total: 197994.20
+Year 18
+Amount: $203994.20    Expected Return: 14279.59    Total: 218273.79
+Year 19
+Amount: $224273.79    Expected Return: 15699.17    Total: 239972.95
+Year 20
+Amount: $245972.95    Expected Return: 17218.11    Total: 263191.06
+Year 21
+Amount: $269191.06    Expected Return: 18843.37    Total: 288034.43
+Year 22
+Amount: $294034.43    Expected Return: 20582.41    Total: 314616.85
+Year 23
+Amount: $320616.85    Expected Return: 22443.18    Total: 343060.02
+Year 24
+Amount: $349060.02    Expected Return: 24434.20    Total: 373494.23
